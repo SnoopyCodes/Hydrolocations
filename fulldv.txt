@@ -1,0 +1,340 @@
+{
+    "name": "ns1:timeSeriesResponseType",
+    "declaredType": "org.cuahsi.waterml.TimeSeriesResponseType",
+    "scope": "javax.xml.bind.JAXBElement$GlobalScope",
+    "value": {
+        "queryInfo": {
+            "queryURL": "http://waterservices.usgs.gov/nwis/dv/format=json&siteStatus=all&parameterCd=00060&statCd=00003&startDt=2024-05-28&endDt=2024-06-01&sites=08078000,08116650",
+            "criteria": {
+                "locationParam": "[ALL:08078000, ALL:08116650]",
+                "variableParam": "[00060]",
+                "timeParam": {
+                    "beginDateTime": "2024-05-28T00:00:00.000",
+                    "endDateTime": "2024-06-01T00:00:00.000"
+                },
+                "parameter": []
+            },
+            "note": [
+                {
+                    "value": "[ALL:08078000, ALL:08116650]",
+                    "title": "filter:sites"
+                },
+                {
+                    "value": "[mode=RANGE, modifiedSince=null] interval={INTERVAL[2024-05-28T00:00:00.000-04:00/2024-06-01T00:00:00.000-04:00]}",
+                    "title": "filter:timeRange"
+                },
+                {
+                    "value": "methodIds=[ALL]",
+                    "title": "filter:methodId"
+                },
+                {
+                    "value": "2024-07-07T21:32:23.999Z",
+                    "title": "requestDT"
+                },
+                {
+                    "value": "664895e0-3ca8-11ef-8d1d-2cea7f5e5ede",
+                    "title": "requestId"
+                },
+                {
+                    "value": "Provisional data are subject to revision. Go to http://waterdata.usgs.gov/nwis/help/?provisional for more information.",
+                    "title": "disclaimer"
+                },
+                {
+                    "value": "sdas01",
+                    "title": "server"
+                }
+            ]
+        },
+        "timeSeries": [
+            {
+                "sourceInfo": {
+                    "siteName": "Chocolate Bayou nr Alvin, TX",
+                    "siteCode": [
+                        {
+                            "value": "08078000",
+                            "network": "NWIS",
+                            "agencyCode": "USGS"
+                        }
+                    ],
+                    "timeZoneInfo": {
+                        "defaultTimeZone": {
+                            "zoneOffset": "-06:00",
+                            "zoneAbbreviation": "CST"
+                        },
+                        "daylightSavingsTimeZone": {
+                            "zoneOffset": "-05:00",
+                            "zoneAbbreviation": "CDT"
+                        },
+                        "siteUsesDaylightSavingsTime": true
+                    },
+                    "geoLocation": {
+                        "geogLocation": {
+                            "srs": "EPSG:4326",
+                            "latitude": 29.37154349,
+                            "longitude": -95.3230476
+                        },
+                        "localSiteXY": []
+                    },
+                    "note": [],
+                    "siteType": [],
+                    "siteProperty": [
+                        {
+                            "value": "ST",
+                            "name": "siteTypeCd"
+                        },
+                        {
+                            "value": "12040204",
+                            "name": "hucCd"
+                        },
+                        {
+                            "value": "48",
+                            "name": "stateCd"
+                        },
+                        {
+                            "value": "48039",
+                            "name": "countyCd"
+                        }
+                    ]
+                },
+                "variable": {
+                    "variableCode": [
+                        {
+                            "value": "00060",
+                            "network": "NWIS",
+                            "vocabulary": "NWIS:UnitValues",
+                            "variableID": 45807197,
+                            "default": true
+                        }
+                    ],
+                    "variableName": "Streamflow, ft&#179;/s",
+                    "variableDescription": "Discharge, cubic feet per second",
+                    "valueType": "Derived Value",
+                    "unit": {
+                        "unitCode": "ft3/s"
+                    },
+                    "options": {
+                        "option": [
+                            {
+                                "value": "Mean",
+                                "name": "Statistic",
+                                "optionCode": "00003"
+                            }
+                        ]
+                    },
+                    "note": [],
+                    "noDataValue": -999999.0,
+                    "variableProperty": [],
+                    "oid": "45807197"
+                },
+                "values": [
+                    {
+                        "value": [
+                            {
+                                "value": "103",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "dateTime": "2024-05-28T00:00:00.000"
+                            },
+                            {
+                                "value": "414",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "dateTime": "2024-05-29T00:00:00.000"
+                            },
+                            {
+                                "value": "239",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "dateTime": "2024-05-30T00:00:00.000"
+                            },
+                            {
+                                "value": "687",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "dateTime": "2024-05-31T00:00:00.000"
+                            },
+                            {
+                                "value": "1060",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "dateTime": "2024-06-01T00:00:00.000"
+                            }
+                        ],
+                        "qualifier": [
+                            {
+                                "qualifierCode": "P",
+                                "qualifierDescription": "Provisional data subject to revision.",
+                                "qualifierID": 0,
+                                "network": "NWIS",
+                                "vocabulary": "uv_rmk_cd"
+                            }
+                        ],
+                        "qualityControlLevel": [],
+                        "method": [
+                            {
+                                "methodDescription": "",
+                                "methodID": 134643
+                            }
+                        ],
+                        "source": [],
+                        "offset": [],
+                        "sample": [],
+                        "censorCode": []
+                    }
+                ],
+                "name": "USGS:08078000:00060:00003"
+            },
+            {
+                "sourceInfo": {
+                    "siteName": "Brazos Rv nr Rosharon, TX",
+                    "siteCode": [
+                        {
+                            "value": "08116650",
+                            "network": "NWIS",
+                            "agencyCode": "USGS"
+                        }
+                    ],
+                    "timeZoneInfo": {
+                        "defaultTimeZone": {
+                            "zoneOffset": "-06:00",
+                            "zoneAbbreviation": "CST"
+                        },
+                        "daylightSavingsTimeZone": {
+                            "zoneOffset": "-05:00",
+                            "zoneAbbreviation": "CDT"
+                        },
+                        "siteUsesDaylightSavingsTime": true
+                    },
+                    "geoLocation": {
+                        "geogLocation": {
+                            "srs": "EPSG:4326",
+                            "latitude": 29.3496858,
+                            "longitude": -95.5824448
+                        },
+                        "localSiteXY": []
+                    },
+                    "note": [],
+                    "siteType": [],
+                    "siteProperty": [
+                        {
+                            "value": "ST",
+                            "name": "siteTypeCd"
+                        },
+                        {
+                            "value": "12070104",
+                            "name": "hucCd"
+                        },
+                        {
+                            "value": "48",
+                            "name": "stateCd"
+                        },
+                        {
+                            "value": "48157",
+                            "name": "countyCd"
+                        }
+                    ]
+                },
+                "variable": {
+                    "variableCode": [
+                        {
+                            "value": "00060",
+                            "network": "NWIS",
+                            "vocabulary": "NWIS:UnitValues",
+                            "variableID": 45807197,
+                            "default": true
+                        }
+                    ],
+                    "variableName": "Streamflow, ft&#179;/s",
+                    "variableDescription": "Discharge, cubic feet per second",
+                    "valueType": "Derived Value",
+                    "unit": {
+                        "unitCode": "ft3/s"
+                    },
+                    "options": {
+                        "option": [
+                            {
+                                "value": "Mean",
+                                "name": "Statistic",
+                                "optionCode": "00003"
+                            }
+                        ]
+                    },
+                    "note": [],
+                    "noDataValue": -999999.0,
+                    "variableProperty": [],
+                    "oid": "45807197"
+                },
+                "values": [
+                    {
+                        "value": [
+                            {
+                                "value": "46000",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "dateTime": "2024-05-28T00:00:00.000"
+                            },
+                            {
+                                "value": "47300",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "dateTime": "2024-05-29T00:00:00.000"
+                            },
+                            {
+                                "value": "46200",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "dateTime": "2024-05-30T00:00:00.000"
+                            },
+                            {
+                                "value": "43100",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "dateTime": "2024-05-31T00:00:00.000"
+                            },
+                            {
+                                "value": "40600",
+                                "qualifiers": [
+                                    "P"
+                                ],
+                                "dateTime": "2024-06-01T00:00:00.000"
+                            }
+                        ],
+                        "qualifier": [
+                            {
+                                "qualifierCode": "P",
+                                "qualifierDescription": "Provisional data subject to revision.",
+                                "qualifierID": 0,
+                                "network": "NWIS",
+                                "vocabulary": "uv_rmk_cd"
+                            }
+                        ],
+                        "qualityControlLevel": [],
+                        "method": [
+                            {
+                                "methodDescription": "",
+                                "methodID": 135528
+                            }
+                        ],
+                        "source": [],
+                        "offset": [],
+                        "sample": [],
+                        "censorCode": []
+                    }
+                ],
+                "name": "USGS:08116650:00060:00003"
+            }
+        ]
+    },
+    "nil": false,
+    "globalScope": true,
+    "typeSubstituted": false
+}
